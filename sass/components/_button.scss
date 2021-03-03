@@ -1,0 +1,23 @@
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 99;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: #169aca;
+  color: white;
+  cursor: pointer;
+  padding: 1.3rem;
+  border-radius: 50%;
+
+  @media only screen and (max-width: 400px) {
+    visibility: hidden;
+  }
+}
+
+#myBtn:hover {
+  background-color: $color-primary;
+}

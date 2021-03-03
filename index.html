@@ -10,18 +10,20 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" type="img/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="vendors/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/css/normalize.css" />
-    <link rel="stylesheet" href="vendors/css/grid.css" />
-    <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
-    
-    <link rel="stylesheet" href="css/style.css" />
-    <link
+     <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
       rel="stylesheet"
     />
     <title>News</title>
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <nav class="navigation">
     <figure class="navigation__figure">
         <img src="img/logo.png" class="navigation__logo" alt="site logo" />
@@ -51,10 +53,10 @@
       </ul>
     </nav>
 
-    <section class="section-slider">
+    <section  class="section-slider">
       <div class="container">
-        <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide"        data-ride="carousel">
+        
+             <div id="carouselExampleIndicators" class="carousel slide"      data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -64,7 +66,7 @@
                   <div class="carousel-item active">
                     
                     <img class="d-block w-100 carousel-item__img" src="img/buildings.jpg" alt="First slide">
-                    <div class="carousel-caption d-none  d-md-block">
+                    <div class="carousel-caption   d-md-block">
                         <h3 class="carousel-caption__heading">Economy</h3>
                         <p class="carousel-caption__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor vel ipsa accusantium reiciendis...</p>
                     </div>
@@ -72,7 +74,7 @@
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="img/world.jpg" alt="Second slide">
-                    <div class="carousel-caption d-none  d-md-block">
+                    <div class="carousel-caption   d-md-block">
                         <h3 class="carousel-caption__heading">World news</h3>
                         <p class="carousel-caption__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat non dolor officiis fugiat modi quaerat blanditiis harum autem voluptates sunt minima doloremque dolore.</p>
                       </div>
@@ -80,7 +82,7 @@
                   
                 <div class="carousel-item">
                     <img class="d-block w-100" src="img/sports.jpg" alt="Third slide">
-                  <div class="carousel-caption d-none  d-md-block">
+                  <div class="carousel-caption   d-md-block">
                     <h3 class="carousel-caption__heading">Sports</h3>
                     <p class="carousel-caption__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ab quae ipsa unde, quisquam iste quibusdam nihil, vero earum in nesciunt placeat est qui fugit dolore?</p>
                   </div>
@@ -95,26 +97,23 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-            
           </div>
-        </div>
       </div>
     </section>
   <section class="section-news">
     <div class="container">
       <h2 class="heading-secondary margin-bottom-medium">News</h2>
-      <div class="row">
-        <div class="grid-container">
+      <div class="grid-container">
           
           <figure class="grid-container__figure">
           <a href="#" class="grid-container__link"><img src="img/technology.jpg" alt="computer img" class="grid-container__img--1">
-          <figcaption class="grid-container__text">Technology
+          <figcaption class="grid-container__text small">Technology
           </figcaption></a>
           </figure>
           
           <figure class="grid-container__figure grid-container__figure--full">
           <a href="#" class="grid-container__link"><img src="img/finances.jpg" alt="finances img" class="grid-container__img--2">
-          <figcaption class="grid-container__text grid-container__text--half">Finances</figcaption></a>
+          <figcaption class="grid-container__text grid-container__text--half finances">Finances</figcaption></a>
           </figure>
           
           <figure class="grid-container__figure grid-container__figure--three ">
@@ -124,16 +123,17 @@
          
           <figure class="grid-container__figure">
           <a href="#" class="grid-container__link"><img src="img/art (2).jpg" alt="art img" class="grid-container__img--4">
-          <figcaption class ="grid-container__text">Art</figcaption></a>
+          <figcaption class ="grid-container__text small">Art</figcaption></a>
          </figure>
         </div>
       </div>
     </div>
+    
   </section>
 
   <footer>
-    <div class="row row-center">
-      <div class="col span-1-of-2">
+    <div class="footer-wrapper">
+      <div class="flex-item">
         <ul class="footer-nav">
           <li class="footer-nav__item">
             <a href="#" class="footer-nav__link">About us</a>
@@ -152,7 +152,7 @@
           </li>
         </ul>
       </div>
-      <div class="col col-flex span-1-of-2">
+      <div class="flex-item">
         <ul class="social-links">
           <li class="social-links__item">
             <a href="#" class="social-links__link"
@@ -177,13 +177,14 @@
         </ul>
       </div>
     </div>
-    <div class="row">
+    
       <div class=" footer-copy center-text">
-      <p>Copyright &copy; 2021 by News.All rights reserved.</p>
+      <p>Copyright &copy; 2021 by News.  All rights reserved.</p>
+      
       </div>
-    </div>
+    
   </footer>
-
+    <script src="script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

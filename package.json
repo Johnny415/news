@@ -1,14 +1,18 @@
 {
-  "name": "Omnifood",
+  "name": "news",
   "version": "1.0.0",
-  "description": "Omnifood webpage",
+  "description": "news webpage",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "prefix:css": "postcss css/style.css -u autoprefixer -b 'last 10 versions' -o css/style.prefix.css"
   },
   "author": "Johnny",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "autoprefixer": "^10.2.4",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1"
   }
 }

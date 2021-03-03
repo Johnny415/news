@@ -1,25 +1,35 @@
 .navigation {
-  background-color: #333;
-  padding: 2rem;
+  background-color: $color-dark;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  &__icon {
+  @media only screen and (max-width: 400px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3rem;
   }
 
   &__logo {
+    margin-top: 1rem;
     margin-left: 2.5rem;
-    height: 4rem;
+    height: 3rem;
+    @media only screen and (max-width: 300px) {
+      margin-left: 1rem;
+    }
   }
   &__figure {
     margin: 0;
   }
   &__figcaption {
     text-align: center;
-    color: #00aced;
-    font-size: 4rem;
+    color: $color-primary;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: 0.4rem;
+    @media only screen and (max-width: 300px) {
+      font-size: 2rem;
+    }
   }
 
   &__list {
@@ -29,6 +39,9 @@
   &__item {
     display: inline-block;
     margin-right: 2rem;
+    @media only screen and (max-width: 300px) {
+      margin-right: 0.5rem;
+    }
   }
   &__link {
     &,
@@ -37,12 +50,12 @@
       font-size: 1.6rem;
       font-weight: 400;
       text-decoration: none;
-      color: #888;
+      color: $color-light-grey;
       transition: color 0.2s;
 
       &:hover,
       &:active {
-        color: #00aced;
+        color: $color-primary;
       }
     }
   }
@@ -66,7 +79,7 @@
   &__content {
     visibility: hidden;
     position: absolute;
-    background-color: #00aced;
+    background-color: $color-primary;
     min-width: 16rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -74,7 +87,7 @@
     border-radius: 0.3rem;
   }
   &__content-links {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
     color: #fff;

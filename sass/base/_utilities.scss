@@ -13,12 +13,4 @@
 }
 .margin-top-big {
   margin-top: 8rem;
-
-  @include respond(tab-port) {
-    margin-top: 4rem;
-  }
-
-  @include respond(phone) {
-    margin-top: 4rem;
-  }
 }
