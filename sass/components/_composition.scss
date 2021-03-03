@@ -68,11 +68,14 @@
       font-size: 2rem;
       height: 4rem;
     }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 430px) {
       font-size: 1.7rem;
       height: 3rem;
     }
-    @media only screen and (max-width: 300px) {
+    @media only screen and (max-width: 350px) {
+      top: 80%;
+    }
+    @media only screen and (max-width: 310px) {
       font-size: 1.3rem;
       height: 2.4rem;
       top: 79%;
@@ -90,12 +93,15 @@
         top: 80%;
         max-width: 25rem;
       }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 430px) {
         position: absolute;
         top: 80%;
         max-width: 15rem;
       }
-      @media only screen and (max-width: 300px) {
+      @media only screen and (max-width: 350px) {
+        top: 76%;
+      }
+      @media only screen and (max-width: 310px) {
         position: absolute;
         top: 75%;
         max-width: 15rem;
@@ -162,7 +168,7 @@
     position: absolute;
     width: 25rem;
   }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 430px) {
     position: absolute;
     width: 15rem;
   }
@@ -176,7 +182,11 @@
     position: absolute;
     top: 84%;
   }
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 350px) {
+    position: absolute;
+    top: 78%;
+  }
+  @media only screen and (max-width: 310px) {
     position: absolute;
     top: 78%;
   }

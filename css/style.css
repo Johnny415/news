@@ -304,11 +304,14 @@ body {
       .grid-container__text {
         font-size: 2rem;
         height: 4rem; } }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 430px) {
       .grid-container__text {
         font-size: 1.7rem;
         height: 3rem; } }
-    @media only screen and (max-width: 300px) {
+    @media only screen and (max-width: 350px) {
+      .grid-container__text {
+        top: 80%; } }
+    @media only screen and (max-width: 310px) {
       .grid-container__text {
         font-size: 1.3rem;
         height: 2.4rem;
@@ -325,12 +328,15 @@ body {
           position: absolute;
           top: 80%;
           max-width: 25rem; } }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 430px) {
         .grid-container__text--half {
           position: absolute;
           top: 80%;
           max-width: 15rem; } }
-      @media only screen and (max-width: 300px) {
+      @media only screen and (max-width: 350px) {
+        .grid-container__text--half {
+          top: 76%; } }
+      @media only screen and (max-width: 310px) {
         .grid-container__text--half {
           position: absolute;
           top: 75%;
@@ -384,7 +390,7 @@ body {
     position: absolute;
     width: 25rem; } }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
   .small {
     position: absolute;
     width: 15rem; } }
@@ -399,7 +405,12 @@ body {
     position: absolute;
     top: 84%; } }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 350px) {
+  .finances {
+    position: absolute;
+    top: 78%; } }
+
+@media only screen and (max-width: 310px) {
   .finances {
     position: absolute;
     top: 78%; } }
@@ -417,7 +428,7 @@ body {
   @media only screen and (max-width: 400px) {
     .carousel-item {
       height: 20rem; } }
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 330px) {
     .carousel-item {
       height: 15rem; } }
   .carousel-item__img {
@@ -450,17 +461,24 @@ body {
       .carousel-caption__heading {
         text-align: center;
         position: absolute;
-        top: -6rem;
-        left: 22%;
+        top: -3rem;
+        left: 25%;
         font-size: 1rem;
         width: 10rem; } }
-    @media only screen and (max-width: 476px) {
+    @media only screen and (max-width: 435px) {
       .carousel-caption__heading {
-        top: -1rem;
-        left: 22%; } }
-    @media only screen and (max-width: 300px) {
+        text-align: center;
+        position: absolute;
+        top: -6rem;
+        left: 25%;
+        font-size: 1rem;
+        width: 10rem; } }
+    @media only screen and (max-width: 400px) {
       .carousel-caption__heading {
-        top: -1rem;
+        top: -3rem; } }
+    @media only screen and (max-width: 330px) {
+      .carousel-caption__heading {
+        top: 0rem;
         left: 15%;
         width: 10rem; } }
   .carousel-caption__text {
