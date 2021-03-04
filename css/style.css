@@ -360,9 +360,10 @@ body {
     .grid-container__img--1:hover {
       transform: scale(1); }
   .grid-container__text {
-    position: relative;
+    position: absolute;
     left: 0;
-    bottom: 20%;
+    bottom: 0;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 0.5rem;
@@ -370,24 +371,10 @@ body {
     font-weight: 400;
     color: #fff;
     transition: color 0.3s; }
-    @media only screen and (max-width: 990px) {
-      .grid-container__text {
-        position: relative;
-        bottom: 6rem; } }
-    @media only screen and (max-width: 600px) {
-      .grid-container__text {
-        font-size: 2rem;
-        bottom: 5rem; } }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
       .grid-container__text {
         font-size: 1.5rem;
-        bottom: 4rem; } }
-    @media only screen and (max-width: 330px) {
-      .grid-container__text {
-        padding: 0;
-        bottom: 3rem; } }
-    .grid-container__text--half {
-      width: 50%; }
+        padding: 0.3rem; } }
     .grid-container__text:hover {
       color: #888; }
   .grid-container__img--2 {
@@ -419,14 +406,10 @@ body {
     .grid-container__img--4:hover {
       transform: scale(1); }
 
-@media only screen and (max-width: 990px) {
-  .small {
-    width: 50%; } }
-
 .ribbon {
   position: absolute;
   font-size: 1.6rem;
-  top: 0%;
+  top: 0;
   right: 0;
   padding: 1.3rem 9.6rem;
   color: #fff;
