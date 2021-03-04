@@ -1,13 +1,10 @@
 @import "abstracts/variables";
-@import "abstracts/mixins";
 
 @import "base/base";
 
-@import "layout/header";
-@import "layout/grid";
 @import "layout/footer";
 @import "layout/navigation";
-@import "layout/popup";
+@import "layout/preloader";
 
 @import "base/typography";
 @import "base/animations";
@@ -15,10 +12,7 @@
 
 @import "components/button";
 @import "components/composition";
-@import "components/feature-box";
-@import "components/card";
-@import "components/story";
+
 @import "components/carousel";
-@import "components/form";
 
 @import "pages/home";

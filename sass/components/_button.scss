@@ -10,7 +10,8 @@
   background-color: #169aca;
   color: white;
   cursor: pointer;
-  padding: 1.3rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
 
   @media only screen and (max-width: 400px) {
@@ -20,4 +21,8 @@
 
 #myBtn:hover {
   background-color: $color-primary;
+}
+
+.scroll-icon {
+  font-size: 2rem;
 }

@@ -22,7 +22,18 @@
     <title>News</title>
   </head>
   <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="gooey">
+      <img src="img/favicon.png" class="preloader-logo" alt="logo" />
+      <h3 class="patient">Be patient now...</h3>
+      <span class="dot"></span>
+      <div class="dots">
+        <span class="dotOne"></span>
+        <span class="dotOne"></span>
+        <span class="dotOne"></span>
+      </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up scroll-icon"></i></button>
 
     <nav class="navigation">
     <figure class="navigation__figure">
@@ -32,7 +43,7 @@
       <ul class="navigation__list">
         <li class="navigation__item">
         <div class="dropdown">
-          <a href="#" class="navigation__link dropdown__link">Top news</a>
+          <a href="#" class="navigation__link dropdown__link"><i class="fa fa-sort-down navigation__icon"></i>Top news</a>
           <div class="dropdown__content">
               <a href="#" class="dropdown__content-links">World</a>
               <a href="#" class="dropdown__content-links">Economy</a>
@@ -84,7 +95,7 @@
                     <img class="d-block w-100" src="img/sports.jpg" alt="Third slide">
                   <div class="carousel-caption   d-md-block">
                     <h3 class="carousel-caption__heading">Sports</h3>
-                    <p class="carousel-caption__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ab quae ipsa unde, quisquam iste quibusdam nihil, vero earum in nesciunt placeat est qui fugit dolore?</p>
+                    <p class="carousel-caption__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ab quae ipsa unde, quisquam iste quibusdam nihil?</p>
                   </div>
                 </div>
               </div></a>
@@ -105,14 +116,17 @@
       <h2 class="heading-secondary margin-bottom-medium">News</h2>
       <div class="grid-container">
           
-          <figure class="grid-container__figure">
+          <figure class="grid-container__figure grid-container__ribbon-figure">
+           
           <a href="#" class="grid-container__link"><img src="img/technology.jpg" alt="computer img" class="grid-container__img--1">
-          <figcaption class="grid-container__text small">Technology
+          
+          <figcaption class="grid-container__text small rib">Technology
           </figcaption></a>
+          <div class="ribbon">Featured</div>
           </figure>
           
           <figure class="grid-container__figure grid-container__figure--full">
-          <a href="#" class="grid-container__link"><img src="img/finances.jpg" alt="finances img" class="grid-container__img--2">
+           <a href="#" class="grid-container__link"><img src="img/finances.jpg" alt="finances img" class="grid-container__img--2">
           <figcaption class="grid-container__text grid-container__text--half finances">Finances</figcaption></a>
           </figure>
           
